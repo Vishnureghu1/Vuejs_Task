@@ -1,0 +1,57 @@
+{
+  "blocks": [
+    {
+      "token": "PERSON_NAME",
+      "type": "text",
+      "props": {
+        "title": "Enter your name",
+        "required": true,
+        "placeholder": "e.g. John Doe"
+      }
+    },
+    {
+      "token": "IS_PERSON_MINOR",
+      "type": "checkbox",
+      "props": {
+        "title": "Is the current person minor?",
+        "required": false
+      }
+    },
+    {
+      "token": "PERSON_DOB",
+      "type": "date",
+      "props": {
+        "title": "Enter your DOB",
+        "required": "IS_PERSON_MINOR",
+        "placeholder": "e.g. 01/01/2000"
+      }
+    },
+    {
+      "token": "EMAIL_ADDRESS",
+      "type": "text",
+      "props": {
+        "title": "Enter your email address",
+        "required": true,
+        "placeholder": "e.g. example@example.com"
+      }
+    },
+    {
+      "token": "GENDER",
+      "type": "radio",
+      "props": {
+        "title": "Select your gender",
+        "required": true,
+        "options": ["Male", "Female", "Other"]
+      }
+    },
+    {
+      "token": "COUNTRY",
+      "type": "select",
+      "props": {
+        "title": "Select your country",
+        "required": true,
+        "options": ["USA", "Canada", "UK", "Australia"]
+      }
+    }
+  ]
+}

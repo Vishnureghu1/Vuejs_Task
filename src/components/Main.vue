@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h1>Data Communication</h1>
     <parent-section />
   </div>
 </template>

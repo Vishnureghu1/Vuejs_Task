@@ -10,8 +10,8 @@
         <li>Role: {{ person.role }}</li>
       </ul>
       <div>
-        <button @click="sendDataToParent">Send Data to Parent</button>
-        <button @click="sendDataToChild">Send Data child to child</button>
+        <button class="btn btn-info btn-style" @click="sendDataToParent">Send Data to Parent</button>
+        <button class="btn btn-info"  @click="sendDataToChild">Send Data child to child</button>
       </div>
     </div>
   </div>
@@ -59,4 +59,7 @@ export default {
 </script>
 
 <style>
+.btn-style {
+  margin-right: 10px;
+}
 </style>
